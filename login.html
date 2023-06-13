@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <title>Login y Register - CCI</title>
+
+    <link rel="stylesheet" href="css/styleslg.css">
+</head>
+
+<body>  
+        <main>
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya está registrado?</h3>
+                        <p> Inicia sesión para entrar en la página</p>    
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Primera vez aquí?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button   id="btn_registrarse"><a href="./registro.html" style="text-decoration: none;">Registrarse</a></button>
+                    </div>
+                </div>
+
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+              
+                    <form action="" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input id="correo" type="text" placeholder="Correo Electronico" name="usuario" id="usuario">
+                        <input id="password" type="password" placeholder="Contraseña" name="password" id="password">
+                        <input type="button" value="Ingresar" class="login" onclick="loginUsuario()" style="cursor:pointer">
+                        <button> <a href="./index.php"style="text-decoration:none"> Regresar</a></button>   
+                    </form>
+
+                </div>
+            </div>
+
+        </main>
+
+
+        <script src="js/funciones.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/sweetalert2.all.min.js"></script>
+       
+    
+>
+</body>
+</html>

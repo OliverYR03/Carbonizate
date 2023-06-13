@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script src="./js/carrito.js"></script>
+    <link rel="stylesheet" href="./css/carta.css">
+    <title>Carbonizate Polleria</title>
+</head>
+<header>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./reserva.html">Reserva tu mesa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./menu-cart.html">Ordena Aqui</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ubicanos.html">Donde Ubicarnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Acerca de nosotros</a>
+                    </li>
+                    
+                    <li class="nav-item"> 
+                        <a href="./pago.html"> <img class="nav-link" src="./images/carro-de-la-carretilla.png" style="width: 40px; margin: auto; cursor: pointer;"></a>
+                    </li>
+                </ul>
+            </div>
+             
+    </nav>
+<a class="cta" href="#"><i class="fa-solid fa-cart-plus"></i>
+</a>
+</header>
+<body>
+
+    <div class="container">
+        <div class="row">
+        <!-- Menu -->
+        <section id="menu" class="bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 intro-text">
+                            <h1>Tenemos una gran variedad de platillos </h1>
+                            <p> Inclusive comidas vegetarianas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-parrillas-tab" data-bs-toggle="pill" data-bs-target="#pills-parrillas"
+                                type="button" role="tab" aria-controls="pills-parrillas" aria-selected="true">Parrillas</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-salad-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-salad" type="button" role="tab" aria-controls="pills-salad"
+                                aria-selected="true">Ensaladas</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-Bebidas-tab" data-bs-toggle="pill" data-bs-target="#pills-Bebidas"
+                                type="button" role="tab" aria-controls="pills-Bebidas" aria-selected="true">Bebidas</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-postres-tab" data-bs-toggle="pill" data-bs-target="#pills-postres"
+                                type="button" role="tab" aria-controls="pills-postres" aria-selected="true">Postres</button>
+                        </li>
+
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="pills-parrillas" role="tabpanel" aria-labelledby="pills-parrillas-tab"
+                            tabindex="0">
+                            <div class="title">
+                                <h4 class="title-menu"><span></span> Parrillas</h4>
+                            </div>  
+                            <div class="menu">
+                                <div class="single-menu shadow-on-hover" >
+                                    <img src="images/Parrilla/parrilla-costilla-cerdo.jpg" class="img" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Costillas de cerdo⠀⠀<span class="price">S/. 27</span></h4>
+                                        <p class="menu-subtitle"> Las costillas BBQ es un clásico dentro de la gastronomía americana. Deliciosas costillitas de cerdo, bañadas en una salsa BBQ agridulce. </p>
+                                        <button href="" data-id="1" class="btn-add-cart">add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="single-menu shadow-on-hover">
+                                    <img src="images/Parrilla/parrilla-brochetas-salmon3.jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Brochetas de pescado ⠀<span>S/. 20</span></h4>
+                                        <p class="menu-subtitle">Las mejores recetas de brochetas de pescado con las que vais a poder disfrutar de una gran combinación de sabores e ingredientes, donde cada bocado puede ser toda una experiencia. </p>
+                                    
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Parrilla/parrilla-pechuga-pollo2.jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Pechuga de pollo a la parrilla<span>45$</span></h4>
+                                        <p class="menu-subtitle">Para los que prefieren una comida saludable y alejarse un rato de las carnes rojas, el pollo es sin lugar a dudas,  la mejor opción. En esta ocasión,</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Parrilla/cart-parrilla-tomahwk.jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Tomahawk<span>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀45$</span></h4>
+                                        <p class="menu-subtitle">Se trata de un gran filete de res con un pronunciado hueso,  proveniente de las costillas anteriores de la ternera. Además, posee gran infiltración de grasa intramuscular, lo que garantiza su sabor y jugosidad.</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Parrilla/cart-parrilla-bistec.jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Bistec a la parrilla⠀<span>45$</span></h4>
+                                        <p class="menu-subtitle">Un bistec perfecto a la parrilla al revés es clave para dominar para cualquier entusiasta de la barbacoa en el patio trasero. El chamuscado inverso es una técnica que siempre dará resultados perfectos en el bistec.</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Parrilla/cart-parrilla-brocheta.jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Brochetas de verduras⠀<span>45$</span> </h4>
+                                        <p class="menu-subtitle">Estas brochetas de verduras a la parrilla son un bocado muy veraniego, Perfectas para hacer en la barbacoa.</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade show" id="pills-salad" role="tabpanel"
+                            aria-labelledby="pills-salad-tab" tabindex="0">
+                            <div class="title">
+                                <h4 class="title-menu"> Ensaladas </h4>
+                            </div>
+                            <div class="menu">
+                                <div class="single-menu shadow-on-hover">
+                                    <img src="images/Ensalada/card-salad-personal.jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >ENSALADA PERSONAL⠀⠀<span>S/. 10</span></h4>
+                                        <p class="menu-subtitle"> Las costillas BBQ es un clásico dentro de la gastronomía americana. Deliciosas costillitas de cerdo, bañadas en una salsa BBQ agridulce. </p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div>
+                                <div class="single-menu shadow-on-hover">
+                                    <img src="images/Ensalada/card-salad-familiar.jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >ENSALADA CON CIRUELA ⠀<span>S/. 10</span></h4>
+                                        <p class="menu-subtitle">Las mejores recetas de brochetas de pescado con las que vais a poder disfrutar de una gran combinación de sabores e ingredientes, donde cada bocado puede ser toda una experiencia. </p>
+                                    
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Ensalada/card-salad-personal.jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >ENSALADA CON QUINUA<span>⠀⠀⠀S/. 12</span></h4>
+                                        <p class="menu-subtitle">Para los que prefieren una comida saludable y alejarse un rato de las carnes rojas, el pollo es sin lugar a dudas,  la mejor opción. En esta ocasión,</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Ensalada/card-salad-del-huerto.jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >ENSALADA DE CAMPO <span>⠀⠀⠀⠀S/. 15</span></h4>
+                                        <p class="menu-subtitle">Se trata de un gran filete de res con un pronunciado hueso,  proveniente de las costillas anteriores de la ternera. Además, posee gran infiltración de grasa intramuscular, lo que garantiza su sabor y jugosidad.</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Ensalada/card-salad-cheese.jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >RODAJAS DE TOMATE ACOMPAÑADO⠀<span>45$</span></h4>
+                                        <p class="menu-subtitle">Un bistec perfecto a la parrilla al revés es clave para dominar para cualquier entusiasta de la barbacoa en el patio trasero. El chamuscado inverso es una técnica que siempre dará resultados perfectos en el bistec.</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Ensalada/card-salad-del-huerto2.jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >ENSALADA Y SALSA DE HONGOS⠀<span>45$</span> </h4>
+                                        <p class="menu-subtitle">Estas brochetas de verduras a la parrilla son un bocado muy veraniego, Perfectas para hacer en la barbacoa.</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                    <!-- ..... BEBIDAS ..... -->
+                        <div class="tab-pane fade show" id="pills-Bebidas" role="tabpanel" aria-labelledby="pills-Bebidas-tab"
+                            tabindex="0">
+                            <div class="title">
+                                <h4 class="title-menu"><span></span> Bebidas</h4>
+                            </div>  
+                            <div class="menu">
+                                <div class="single-menu shadow-on-hover" >
+                                    <img src="images/Bebidas/cart-drinks-img (1).jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Caipiriña⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<span>S/. 27</span></h4>
+                                        <p class="menu-subtitle"> Cóctel hecho con aguardiente de caña , azúcar , hielo picado y zumo de limón .</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div>
+                                <div class="single-menu shadow-on-hover">
+                                    <img src="images/Bebidas/cart-drinks-img (2).jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Coctel de Naranja⠀⠀⠀⠀⠀⠀⠀⠀<span>S/. 20</span></h4>
+                                        <p class="menu-subtitle">Cóctel a base de tequila. Contiene una mezcla con bebida de té hatsu naranja, limón tahití , mango y naranja</p>
+                                    
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Bebidas/cart-drinks-img (3).jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Coca Cola<span>45$</span></h4>
+                                        <p class="menu-subtitle">Bebida azucarada gaseosa vendida a nivel mundial en tiendas, restaurantes y máquinas expendedoras en más de doscientos países.</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Bebidas/cart-drinks-img (4).jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Moscow Mule<span>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀45$</span></h4>
+                                        <p class="menu-subtitle">Cóctel con alcohol -por tanto, una bebida para adultos- que se sirve tradicionalmente en una jarra de cobre</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Bebidas/cart-drinks-img (5).jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Vino Palacio de Menade⠀<span>45$</span></h4>
+                                        <p class="menu-subtitle">Un Vino blanco de Rueda, Castilla y León, España. Hecho con Verdejo. Este vino tiene 120 menciones de notas de cítrico </p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Bebidas/cart-drinks-img (7).jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Malteada<span>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀45$</span> </h4>
+                                        <p class="menu-subtitle">Similar a un milkshake pero con la salvedad de que además de leche lleva una cucharada de polvo de malta</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade show" id="pills-postres" role="tabpanel" aria-labelledby="pills-postres-tab"
+                            tabindex="0">
+                            <div class="title">
+                                <h4 class="title-menu"><span></span> Postres</h4>
+                            </div>  
+                            <div class="menu">
+                                <div class="single-menu shadow-on-hover" >
+                                    <img src="images/Postres/cart-postres- (1).jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Alfajores grandes⠀⠀<span>S/. 27</span></h4>
+                                        <p class="menu-subtitle"> Alfajores rellenos de dulces de fruta (generalmente de membrillo).</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div>
+                                <div class="single-menu shadow-on-hover">
+                                    <img src="images/Postres/cart-postres- (2).jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Torta helada de cereza⠀<span>S/. 20</span></h4>
+                                        <p class="menu-subtitle">el cerezas del sur de nuestra provincia y para enfriar un poco el ambiente, os proponemos una refrescante y sabrosa receta de tarta helada de cereza</p>
+                                    
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Postres/cart-postres- (3).jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Alfajores pequeños<span>45$</span></h4>
+                                        <p class="menu-subtitle">Galleta de fécula de maiz y mantequilla que se compone de dos galletas unidas con el tradicional relleno de dulce de leche y espolvoreada con azúcar pulverizada.</p>
+                                        <button style="margin-left: 270px;">añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Postres/cart-postres- (6).jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Panqueques<span>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀45$</span></h4>
+                                        <p class="menu-subtitle">torta plana, redonda y salada o dulce, cuya masa contiene leche y está levadurizada</p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Postres/cart-postres- (4).jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Mini tartas⠀<span>45$</span></h4>
+                                        <p class="menu-subtitle">masa de harina y manteca, cocida al horno, en que ordinariamente se envuelve crema o dulce en miniatura</p>
+                                        <button style="margin-left: 270px;">añadir a carrito</button>
+                                    </div>
+                                </div><div class="single-menu shadow-on-hover">
+                                    <img src="images/Postres/cart-postres- (5).jpg" alt="">
+                                    <div class="menu-content">
+                                        <h4 class="menu-title" >Sushi⠀<span>45$</span> </h4>
+                                        <p class="menu-subtitle">lato típico de origen japonés basado en arroz aderezado con vinagre de arroz, azúcar y sal </p>
+                                        <button>añadir a carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 intro-text">
+                                    <p> Si tienes una sugerencia para nuevos platilos hazlo llegar a nuestro correo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </section>
+    </div>
+</div>
+</body>
+
+<script>
+    function showCart(x){
+        document.getElementById("products-id").style.display = "block";
+    }
+    function closeBtn(){
+         document.getElementById("products-id").style.display = "none";
+    }
+
+</script>
+
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3><span>Carbonizate !</span></h3>
+
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p>Ubicanos
+                Av Miraflores 456 - Miraflores</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+51 993 995 996</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">carbonizate.pe@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>Sobre Nosotros</span>
+            <strong>Carbonizate ! </strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa excepturi assumenda laborum, quibusdam, molestiae obcaecati nihil sit consectetur non illo iure. Eos nostrum atque neque itaque aperiam cupiditate dignissimos.
+        </p>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- OLIVER YNFANTAS -->
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <title>Login y Register - CCI</title>
+
+    <link rel="stylesheet" href="css/styleslg.css">
+</head>
+
+<body>  
+        <main>
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya está registrado?</h3>
+                        <p> Inicia sesión para entrar en la página</p>    
+                        <button id="btn__iniciar-sesion"><a href="./login.html">Iniciar Sesión</a></button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Primera vez aquí?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn_registrarse">Registrarse</button>
+                    </div>
+                </div>
+
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+
+                    <!--Register-->
+                    <form action="" class="formulario__register">
+                        <h2>Registrarse</h2>
+                        <input id="correo" type="text" placeholder="Correo Electronico">
+                        <input id="usuario" type="text" placeholder="Usuario">
+                        <input id="password" type="password" placeholder="Contraseña">
+                        <input type="button" value="Registrar" class="login" onclick="registrarUsuario()">
+                      
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="js/script.js"></script>
+        <script src="js/funciones.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/sweetalert2.all.min.js"></script>
+       
+    
+>
+</body>
+</html>
